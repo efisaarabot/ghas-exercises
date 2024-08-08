@@ -1,0 +1,19 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    # lok for dependency information in directory
+    directory: "/authn-service"
+    # daily security updates
+    schedule:
+      interval: "daily"
+    # custom label 
+    labels:
+      - "triage-required"
+    # assignees and reviewers
+    assignees:
+      - "efisaarabot"
+    reviewers:
+      - "efisaarabot"
+    # prefix the commit message
+    commit-message:
+      prefix: "pip"
